@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bcolor: linear-gradient(135deg, #3E1F47, #FF00FF);
+    --textColor: white;
+    --titleColor: rgb(0, 234, 255);
+    --secTColor: rgb(22, 206, 223);
+}
+
+body {
+    background: var(--bcolor);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.title {
+    color: var(--titleColor);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.question {
+    color: var(--textColor);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.options label {
+    color: var(--textColor);
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.options input[type="radio"] {
+    transform: scale(0.9);
+}
+
+.options label:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--secTColor);
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: 2px solid aqua;
+    background-color: var(--bcolor);
+    color: var(--secTColor);
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: black;
+    transform: scale(1.05);
+}
+h2{
+    color: var(--textColor);
+    font-weight: 400;
+}
+p{
+    color: var(--secTColor);
+    font-weight: 400;
+}
